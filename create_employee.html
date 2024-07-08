@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>יצירת עובד חדש</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+
+</head>
+<body><div class="full">  
+    <nav>ניהול מערך האבטחה</nav>
+    <div class="button-container">
+    <h1>יצירת עובד חדש</h1>
+    <div class="form-center">
+    <form action="create_employee.php" method="POST" >
+        <label for="employeeID">תעודת זהות:</label>
+        <input type="text" id="employeeID" name="employeeID" autocomplete="off"  required><br>
+        <label for="name">שם:</label>
+        <input type="text" id="name" name="name" autocomplete="off"  required><br>
+        <label for="position">תפקיד:</label>
+        <input type="text" id="position" name="position" autocomplete="off"  required><br>
+        <div>
+        <input type="submit" value="צור עובד" class="submit">
+        <button onclick="location.href='employees.html'" class="back">חזרה</button></div>
+    </form> 
+</div>
+</div>
+</body>
+</html>

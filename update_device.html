@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>עדכון פרטי בדיקה</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <nav>ניהול מערך האבטחה</nav>
+    <h2>עדכון פרטי בדיקה</h2>
+    <form action="update_test.php" method="POST">
+        <label for="serialID">מס״ד:</label>
+        <input type="text" id="serialID" name="serialID" required><br>
+        <label for="testPeriod">תקופת בדיקה:</label>
+        <input type="text" id="testPeriod" name="testPeriod"><br>
+        <label for="result">תוצאה:</label>
+        <input type="text" id="result" name="result"><br>
+        <label for="startDate">תאריך התחלה:</label>
+        <input type="date" id="startDate" name="startDate"><br>
+        <label for="endDate">תאריך סיום:</label>
+        <input type="date" id="endDate" name="endDate"><br>
+        <input type="submit" value="עדכן פרטי בדיקה">
+    </form>
+    <button onclick="location.href='index.html'">חזרה</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הסרת עובד</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+
+</head>
+<body><div class="full h">
+    <nav>ניהול מערך האבטחה</nav>
+    <h1>הסרת עובד</h1>
+    <div class="form-center">
+    <form action="remove_employee.php" method="POST">
+        <label for="employeeID">תעודת זהות:</label>
+        <input type="text" id="employeeID" name="employeeID" required><br>
+        <div>
+        <input type="submit" value="הסר עובד">
+        <button onclick="location.href='employees.html'" class="back">חזרה</button>
+    </div>
+    </form>
+</div>
+</div>
+    </body>
+</html>

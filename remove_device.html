@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הסרת נשק</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <nav>ניהול מערך האבטחה</nav>
+    <h2>הסרת נשק</h2>
+    <form action="remove_device.php" method="POST">
+        <label for="serialID">מס״ד:</label>
+        <input type="text" id="serialID" name="serialID" required><br>
+        <input type="submit" value="הסר נשק">
+    </form>
+    <button onclick="location.href='index.html'">חזרה</button>
+</body>
+</html>

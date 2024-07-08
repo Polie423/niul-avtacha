@@ -1,0 +1,218 @@
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.full{
+    width: 100%;
+    background-color: white;
+}
+.h{
+    height: 100vh;
+}
+nav{
+    background-color: #0c346c;
+    color: white;
+    padding: 20px;
+}
+h1{
+    color: #333;
+    text-align: center;
+    font-size: 2.3rem;
+}
+h2 {
+    color: #333;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+div p{
+    margin-bottom: 80px;
+}
+
+.button-container {
+    background-color: #fff;
+    padding:20px 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+.left{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    justify-content: center;
+    width: fit-content;
+}
+.form-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin: 5px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 1.2rem;
+}
+.divmain{
+    background-color: #ffffff;
+    padding:20px 100px;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    min-width: 300px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    height: 30px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #ccc;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+
+
+input[type="submit"], button {
+    border: 1px solid rgb(7, 7, 114) ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"], button{
+    border-radius: 25px;
+    font-size: 1.3rem;
+    padding: 5px 15px;
+    color: #ffffff;
+    background-color: #0c346c;
+    border: 2px solid #0c346c;
+}
+.back{
+    background-color: white;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    color: #0c346c;
+    border: 2px solid #0c499e;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: #114998;
+    color: white;
+    border-radius:50%;
+    font-size: 1.2rem;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 2px 2px 4px #114998;
+    border: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.work{
+    gap: 30px;
+}
+.buttons div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.long-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 80px;
+
+}
+.report-cont button{
+    display: flex;
+    gap:10px;
+    background-color: white;
+    color: #000409;
+    border: none;
+}
+
+.margin{
+    margin: 20px 100px;
+}
+

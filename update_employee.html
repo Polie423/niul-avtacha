@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>עדכון עובד</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+</head>
+<body><div class="full h">
+    <nav>ניהול מערך האבטחה</nav>
+    <h1>עדכון עובד</h1>
+    <div class="form-center">
+    <form action="update_cert.php" method="POST" class="long-form">
+        <div>
+        <label for="employeeID">תעודת זהות:</label>
+        <input type="text" id="employeeID" name="employeeID" class="sminput" required>
+        </div>
+        <div>
+        <label for="certName">שם ההסמכה:</label>
+        <input type="text" id="certName" name="certName">
+        </div>
+        <div>
+        <label for="certPeriod">תקופת זכאות:</label>
+        <input type="text" id="certPeriod" name="certPeriod">
+        </div>
+        <div>
+        <label for="certGrade">ציון:</label>
+        <input type="text" id="certGrade" name="certGrade">
+        </div>
+        <div>
+        <label for="certStartDate">תאריך התחלה:</label>
+        <input type="date" id="certStartDate" name="certStartDate">
+        </div>
+        <div>
+        <label for="certEndDate">תאריך סיום:</label>
+        <input type="date" id="certEndDate" name="certEndDate">
+        </div>
+        <div class="row">
+        <input type="submit" value="עדכן פרטי הסמכה">
+        <button onclick="location.href='employees.html'" class="back">חזרה</button>
+    </div>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
