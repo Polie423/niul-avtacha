@@ -20,7 +20,12 @@
         </div>
         <div>
         <label for="testPeriod">תקופת בדיקה:</label>
-        <input type="text" id="testPeriod" name="testPeriod"><br>
+        <select id="testPeriod" name="testPeriod" required>
+            <option value="" disabled selected>נא לבחור:</option>
+            <option value="monthly">חודשי</option>
+            <option value="thirdYear">תלת שנתי</option>
+            <option value="halfYear">חצי שנתי</option>
+        </select>
         </div>
         <div>
         <label for="startDate">תאריך התחלה:</label>
