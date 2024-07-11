@@ -10,9 +10,9 @@
 </head>
 <body><div class="full h">
     <nav>ניהול מערך האבטחה</nav>
-    <h1>עדכון עובד</h1>
+    <h1>עדכון פרטי עובד</h1>
     <div class="form-center">
-    <form action="update_cert.php" method="POST" class="long-form">
+    <form action="update_cert.php" method="POST" class="long-form" id="courseForm">
         <div>
         <label for="employeeID">תעודת זהות:</label>
         <input type="text" id="employeeID" name="employeeID" class="sminput" required>
@@ -22,8 +22,8 @@
         <input type="text" id="certName" name="certName">
         </div>
         <div>
-        <label for="certPeriod">תקופת זכאות:</label>
-        <input type="text" id="certPeriod" name="certPeriod">
+        <label for="comments">הערות בוחן:</label>
+        <input type="text" id="comments" name="comments">
         </div>
         <div>
         <label for="certGrade">ציון:</label>
@@ -37,12 +37,22 @@
         <label for="certEndDate">תאריך סיום:</label>
         <input type="date" id="certEndDate" name="certEndDate">
         </div>
-        <div class="row">
+        <br/>
         <input type="submit" value="עדכן פרטי הסמכה">
-        <button onclick="location.href='employees.html'" class="back">חזרה</button>
-    </div>
-    </form>
-    </div>
+      </form>
+    </div>   <button onclick="location.href='employees.html'" class="back margin">חזרה</button>
+   
     </div>
 </body>
+<script>
+    document.getElementById('courseForm').addEventListener('submit', function(event) {
+        var startDate = document.getElementById('certStartDate').value;
+        var endDate = document.getElementById('certEndDate').value;
+
+        if (new Date(startDate) >= new Date(endDate)) {
+            alert('End date must be after start date.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+</script>
 </html>

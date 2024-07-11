@@ -13,18 +13,14 @@
     <nav>ניהול מערך האבטחה</nav>
     <h2>עדכון פרטי בדיקה</h2>
     <div class="form-center">
-    <form action="update_test.php" method="POST" class="long-form">
+    <form action="update_test.php" method="POST" class="long-form" id="deviceForm">
         <div>
-        <label for="serialID">מס״ד:</label>
+        <label for="serialID">מסט״ב:</label>
         <input type="text" id="serialID" name="serialID" required><br>
         </div>
         <div>
         <label for="testPeriod">תקופת בדיקה:</label>
         <input type="text" id="testPeriod" name="testPeriod"><br>
-        </div>
-        <div>
-        <label for="result">תוצאה:</label>
-        <input type="text" id="result" name="result"><br>
         </div>
         <div>
         <label for="startDate">תאריך התחלה:</label>
@@ -34,11 +30,33 @@
         <label for="endDate">תאריך סיום:</label>
         <input type="date" id="endDate" name="endDate"><br>
         </div>
+        <div>
+            <label for="result">ממצאים:</label>
+            <input type="text" id="result" name="result"><br>
+            </div>
+        <div>
+            <label for="comments">הערות בוחן:</label>
+            <input type="text" id="comments" name="comments"><br>
+            
+        </div>
         <br/>
-        <input type="submit" value="עדכן פרטי בדיקה">
+        <input type="submit" value="עדכן פרטי בדיקה" class="wf">
+  
+
     </form>
-    </div>
-    <button onclick="location.href='devices.html'" class="back margin">חזרה</button>
+    </div>    <button onclick="location.href='devices.html'" class="back margin">חזרה</button>
+
     </div>
 </body>
+<script>
+    document.getElementById('deviceForm').addEventListener('submit', function(event) {
+        var startDate = document.getElementById('startDate').value;
+        var endDate = document.getElementById('endDate').value;
+
+        if (new Date(startDate) >= new Date(endDate)) {
+            alert('End date must be after start date.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+</script>
 </html>
