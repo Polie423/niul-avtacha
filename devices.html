@@ -9,14 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
 
 </head>
-<body>
+<body><div class="full h">
     <nav>ניהול מערך האבטחה</nav>
     <h2>נשקים</h2>
-    <div class="button-container">
-        <button onclick="location.href='create_device.html'" class="button1">נשק חדש</button>
-        <button onclick="location.href='update_device.html'" class="button1">נשק קיים</button>
-        <button onclick="location.href='remove_device.html'" class="button1">הסרת נשק</button>
-        <button onclick="location.href='index.html'">חזרה</button>
+    <div class="buttons">
+        <div>
+        <button onclick="location.href='create_device.html'" class="button1"><img src="./icons/add-gun.svg" width="80"/></button>
+        <p>נשק חדש</p>
     </div>
+    <div>
+        <button onclick="location.href='update_device.html'" class="button1"><img src="./icons/check-gun.svg" width="80"/></button>
+        <p>נשק קיים</p>
+    </div>
+    <div>
+        <button onclick="location.href='remove_device.html'" class="button1"><img src="./icons/delete-gun.svg" width="80"/></button>
+        <p>הסרת נשק</p>
+    </div>
+      </div>
+      <div>
+        <button onclick="location.href='index.html'" class="back margin">חזרה</button>
+   
+      </div>
+</div>
 </body>
 </html>

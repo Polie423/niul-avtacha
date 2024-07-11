@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
 
 </head>
-<body>
+<body><div class="full h">
     <nav>ניהול מערך האבטחה</nav>
     <h2>יצירת נשק חדש</h2>
+    <div class="form-center">
     <form action="create_device.php" method="POST">
         <label for="serialID">מסט״ב</label>
         <input type="text" id="serialID" name="serialID" required><br>
@@ -19,6 +20,8 @@
         <input type="text" id="type" name="type" required><br>
         <input type="submit" value="צור נשק">
     </form>
-    <button onclick="location.href='index.html'">חזרה</button>
+</div>
+    <button onclick="location.href='devices.html'" class="back margin">חזרה</button>
+</div>
 </body>
 </html>

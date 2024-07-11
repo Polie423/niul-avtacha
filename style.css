@@ -205,11 +205,9 @@ th {
 
 }
 .report-cont button{
-    display: flex;
-    gap:10px;
     background-color: white;
-    color: #000409;
-    border: none;
+    color: #09213f;
+    border: 2px solid rgb(8, 24, 84);
 }
 
 .margin{
